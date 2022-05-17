@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Page Not Found</title>
+
+        <style>
+            body{
+                background-color: rgb(199, 199, 113);
+                text-align: center; 
+	            margin: auto;
+            }
+            .title{
+                font-size: 80px;
+                font-weight: bolder;
+            }
+            #subtitle{
+                font-size: 30px;
+            }
+            .content404{
+                font-size: 20px;
+                color: red;
+            }
+            #currenturl{
+                color: aqua
+            }
+            #navtitle{
+                font-size: 20px;
+            }
+            .nav{
+                font-size: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <br><br><br>
+
+            <div class="title">404</div>
+            <div class="title" id="subtitle">Page Not Found</div>
+
+            <br><br>
+
+            <div>
+                <p class="content404">I'm sorry, but we can't find any page at</p>
+                <p class="content404" id="currenturl">URL-REQUESTING</p>
+                <p class="content404">Please try again with the right URL or contact the website administor</p>
+            </div>
+
+            <br><br><br><br>
+
+            <div>
+                <p id="navtitle">Maybe you are trying to check these following pages?</p><br>
+                <div class="nav">
+                    <a href="http://hi.mcfl.top">TTF's Personal Homepage | hi.mcfl.top</a><br><br>
+                    <a href="http://git.mcfl.top">TTF's Code Repo | git.mcfl.top</a><br><br>
+                    <a href="http://rjxt.mcfl.top">软件系统分析实验 | rjxt.mcfl.top</a><br><br>
+                    <a href="http://game.mcfl.top">Minecraft- Fairy Land | game.mcfl.top</a><br><br>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var url = window.location.href;
+            document.getElementById("currenturl").innerHTML = url;
+        </script>
+    </body>
+
+
+</html>
