@@ -11,6 +11,18 @@
 		<script src="./res/js/main.js"></script>
 		<script src="./res/js/jquery.js"></script>
 		<script>
+			function popup(){
+				while(true){
+					var pop = confirm('本页面仅供展示, 无实际用途');
+					if(pop==true){
+						popup()
+					}
+					else{
+						popup()
+					}
+				}
+			}
+					
 			function scroll() {
 					var top = $("#item-box").offset().top;
 					var scrollTop = $(window).scrollTop();
@@ -76,7 +88,7 @@
 			<div class="join-buttom">
 				<div class="join-item">
 					<h2>Minecraft FairyLand 服务器</h2>
-					<p>无模组 无需正版验证 1.16.5</p>
+					<p>无模组 专属客户端 1.16.5</p>
 					<p>生存、RPG、副本、公会</p>
 					<p>大型主城 无尽探索</p>
 					<p>加强怪物 升级装备 挑战副本</p>
