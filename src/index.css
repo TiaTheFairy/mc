@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: false;
+}
+
+/* FairyLand 定制主题：深色底 + 草地绿 / 湖水青（Minecraft 风格） */
+@plugin "daisyui/theme" {
+  name: "fairyland";
+  default: true;
+  color-scheme: dark;
+  --color-base-100: #0b1220;
+  --color-base-200: #111b2e;
+  --color-base-300: #1b2942;
+  --color-base-content: #e2e8f0;
+  --color-primary: #86efac;
+  --color-primary-content: #052e16;
+  --color-secondary: #67e8f9;
+  --color-secondary-content: #083344;
+  --color-accent: #c4b5fd;
+  --color-accent-content: #1e1b4b;
+  --color-neutral: #1e293b;
+  --color-neutral-content: #e2e8f0;
+  --color-info: #38bdf8;
+  --color-info-content: #082f49;
+  --color-success: #34d399;
+  --color-success-content: #022c22;
+  --color-warning: #fbbf24;
+  --color-warning-content: #451a03;
+  --color-error: #f87171;
+  --color-error-content: #450a0a;
+  --radius-selector: 1rem;
+  --radius-field: 0.75rem;
+  --radius-box: 1.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@font-face {
+  font-family: 'UnidreamLED';
+  src: url('/font/UnidreamLED.woff') format('woff'),
+    local('UnidreamLED');
+}
+
+@font-face {
+  font-family: 'blankspot-owlw4';
+  src: url('/font/blankspot-owlw4.ttf');
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+/* 标题渐变文字 */
+.text-gradient {
+  background-image: linear-gradient(120deg, #86efac, #67e8f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 卡片悬停浮起 */
+.card-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px -12px rgb(134 239 172 / 0.25);
+  border-color: color-mix(in oklab, #86efac 45%, transparent);
+}
