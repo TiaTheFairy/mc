@@ -1,0 +1,30 @@
+{
+  // ============================================
+  // 站点基础配置（支持 // 与 /* */ 注释，保存后刷新页面即生效，无需重新构建）
+  // ============================================
+
+  // 服务器地址（主页"直接连接服务器"会复制这个地址；服务器状态查询也使用它作为默认值）
+  "serverAddress": "mc.ttfl.net",
+
+  // QQ 群号（页面上展示用）
+  "qqGroup": "未填写群号",
+
+  // QQ 加群链接（主页"QQ交流群"卡片跳转用）
+  "qqJoinLink": "https://qm.qq.com/q/JrzjiIuLWC",
+
+  // 站点各处超链接地址
+  "links": {
+    // 服务器百科 / 文档
+    "wiki": "https://wiki.mc.ttfl.net",
+    // 服务器地图（为空字符串 "" 时点击会提示"该网站还未做解析呢"）
+    "map": "https://map.mc.ttfl.net",
+    // 个人主页
+    "personalHomepage": "https://ttfl.net",
+    // 相关链接下拉菜单
+    "namemc": "https://namemc.com",
+    "minecraft": "https://www.minecraft.net",
+    // 主页"资讯"区
+    "bilibili": "https://www.bilibili.com/video/BV1Mx421S7uM",
+    "donate": "https://wiki.mc.ttfl.net/donate"
+  }
+}
